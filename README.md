@@ -1,5 +1,5 @@
 ## Sistema de Gestão Comercial
-
+###  Sumário:
 1. Descrição do sistema
 2. Requisitos
 3. Modelo de dados
