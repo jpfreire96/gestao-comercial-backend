@@ -13,3 +13,7 @@ Um segundo requisito, o sistema deverá possuir um módulo de controle de acesso
 Por último, ele deve possuir um módulo de caixa, para realizar a venda de um produto, além de contar também com relatórios de vendas.
 </div>
 
+&nbsp;
+### Modelo de dados:
+
+<img src="./image/logicModel.png" alt="modelo lógico"/>
