@@ -19,6 +19,7 @@ class CreateProduct extends Migration
                 $table->string('name', 255);
                 $table->mediumText('description')->nullable();
                 $table->integer('quantity');
+                $table->integer('minimum_quantity');
                 $table->double('price');
                 $table->timestamp('deleted_at')->nullable();
                 $table->timestamps();
