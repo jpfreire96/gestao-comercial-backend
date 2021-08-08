@@ -20,6 +20,6 @@ O sistema de gestão comercial é um software cujo objetivo é auxiliar o comerc
 
 &nbsp;
 
-### Modelo de dados: <a name="introduction"></a>
+### Modelagem inicial de dados:
 
 <img src="./image/logicModel.png" alt="modelo lógico"/>
