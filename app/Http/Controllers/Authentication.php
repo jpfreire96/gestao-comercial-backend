@@ -3,22 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Helpers\Helper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class Authentication extends Controller
 {
-    public function __construct()
-    {
-    }
-
     public function auth(Request $request)
     {
         $validated = \Validator::make($request->all(), [
             'email' => 'required|email',
             'password' => 'required',
         ]);
-        
+
         if ($validated->fails()) {
             return response()->json([
                 'success' => false,
@@ -42,10 +39,7 @@ class Authentication extends Controller
                 ], 401);
             }
 
-            return response()->json([
-                'success' => true,
-                'msg' => 'Logado!',
-            ], 200);
+            return $this->generateAuthToken($request->all());
         } catch (\Throwable $thw) {
             return response()->json([
                 'success' => false,
@@ -54,8 +48,8 @@ class Authentication extends Controller
         }
     }
 
-    public function error()
+    public function generateAuthToken($request)
     {
-        
+        $token = Helper::generateToken($request);
     }
 }
