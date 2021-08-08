@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateProduct extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         if (!Schema::hasTable('product')) {
@@ -34,11 +29,6 @@ class CreateProduct extends Migration
         }
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         if (Schema::hasTable('saleitem')) {

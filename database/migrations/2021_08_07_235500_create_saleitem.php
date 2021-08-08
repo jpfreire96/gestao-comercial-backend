@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateSaleitem extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         if (!Schema::hasTable('saleitem')) {
@@ -24,11 +19,6 @@ class CreateSaleitem extends Migration
         }
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         if (Schema::hasTable('saleitem')) {

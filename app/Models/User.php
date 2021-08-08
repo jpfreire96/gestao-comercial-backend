@@ -10,4 +10,9 @@ class User extends Model
     protected $fillable = [
         'name', 'email', 'password', 'phone', 'cpf', 'permission_id',
     ];
+
+    public function scopeGetUser($query, $email)
+    {
+        return $query->where('email', $email);
+    }
 }

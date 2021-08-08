@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateAlertitem extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         if (!Schema::hasTable('alertitem')) {
@@ -28,11 +23,6 @@ class CreateAlertitem extends Migration
         }
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         if (Schema::hasTable('alertitem')) {

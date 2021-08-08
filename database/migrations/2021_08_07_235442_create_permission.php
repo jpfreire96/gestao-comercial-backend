@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreatePermission extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         if (!Schema::hasTable('permission')) {
@@ -30,11 +25,6 @@ class CreatePermission extends Migration
         }
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         if (Schema::hasTable('user')) {
